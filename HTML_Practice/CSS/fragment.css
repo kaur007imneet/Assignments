@@ -1,0 +1,16 @@
+body{
+	width: 700	px;
+	margin-top: 40px;
+
+}
+article img{
+	float: left;
+	margin-right: 30px;
+
+}
+.menuitems{
+	display: inline;
+}
+.lists{
+	float: left;
+	}

@@ -1,0 +1,19 @@
+h1{
+
+	font-family: monospace;
+	text-align: center;
+	font-size: 40px;
+}
+h3
+{
+
+	text-decoration-color: inherit;
+	letter-spacing: 2px;
+	font-family: sans-serif;
+	margin-top: 10px;
+	margin-left: 500px;
+}
+#Screenshot{
+	margin-top: 20px;
+	margin-left: 500px;
+}
