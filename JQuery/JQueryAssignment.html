@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Search Movie</title>
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="JQueryAssignment.css">
+</head>
+<body>
+		<div class="container">
+		
+		<h1 align="center" id="heading1">Welcome to OPEN MOVIE DATABASE</h1>
+		</div>
+		
+		<div class="container">
+			<form class="form1">
+			<label id="labelName">Enter Movie name:</label>
+			<input type="text" name="name" placeholder="Search for Movie..." id="movie-search">
+			<button type="button" id="search-movie">Search Movie</button>
+		</form>
+		</div>
+	
+		<div class="container" id="tablePadding">
+		<table id="table" class="table" border="4" bordercolor="black" width="100%">
+		<thead>
+			<tr class="row1">
+				<th class="column1">Title</th>
+				<th class="column1">Year</th>
+				<th class="column1">imdbID</th>
+				<th class="column1">Type</th>
+				<th class="column1">Poster</th>
+			</tr>
+		</thead>	
+			<tbody>
+				
+			</tbody>
+		</table>
+		</div>
+		<div  class="container" id="errormsg">
+			
+		</div>
+		<script src="jquery-1.8.0.min.js"></script>
+		<script src="main.js"></script>
+</body>
+</html>
