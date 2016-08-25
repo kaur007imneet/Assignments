@@ -1,0 +1,130 @@
+.container_12{
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.container_12{
+	
+	background-color: beige;
+}
+.header{
+     width: auto;
+	border: 2px dotted red;
+	background-color: red;
+}
+.center{
+	margin-left: 300px;
+	margin-top: -120px;
+
+}
+.center1{
+	letter-spacing: 0.2px;
+	font-family: Fruktur;
+	margin-left: 120px;
+	margin-top: 100px;
+	
+}
+ul li{
+   margin-left: 95px;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-style: dotted;
+
+}
+
+a{
+	text-decoration: none;
+}
+ul a:hover{
+	text-decoration: underline;
+	font-size: 30px;
+}
+.Images{
+	width: auto;
+}
+.paragraph{
+
+	font-family: Courgette;
+	width: 500px;
+	margin-top: 20px;
+	text-align: justify;
+}
+.image1{
+	width: 700PX;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+
+.abc{
+
+	margin-top: 20px;
+	border: 1px dotted red;
+	
+}
+.border li{
+	font-size: 24px;
+}
+.xyz{
+	
+	margin-top: -10px;
+	border: 1.2px dotted green;
+}
+
+.border1 li
+{
+
+	margin-top: 240px;
+	margin-left: 90px;
+	display: inline;
+	font-size: 18px;
+}
+.line{
+	color: red; 
+	width: 4px;
+}
+.About{
+	margin-left: 190px;
+	margin-top: 10px;
+}
+.Contact
+{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.Find{
+	margin-left: -80px;
+	margin-top: 10px;
+}
+.find1{
+	margin-left: -80px;
+}
+.find2{
+	margin-left: -80px;
+}
+.find3{
+	margin-left: -80px;
+}
+.camera{
+	margin-left: -170px;
+	margin-top: 200px;
+}
+.texts{
+	margin-left: -145px;
+	margin-top: 200px;
+}
+.view{
+	margin-left: -210px;
+	margin-top: 200px;
+}
+.speciality{
+	font-size: 50px;
+	font-family: cursive;
+	margin-left: 340px;
+	text-shadow: 5px 10px 10px red;
+}
+.footer{
+	background-color: #BDC3C7;
+}

@@ -1,0 +1,85 @@
+const readline    = require('readline');
+const fs          = require('fs');
+var header        =[];
+var jsonData      =[];
+var tempData      ={};
+var isHeader      =true;
+var agegrp;
+var literatepersons;
+var counter=0;
+var str1=null;
+var str2=null;
+/*var array1age[];
+var array1value[];*/
+const rl          = readline.createInterface({
+	input: fs.createReadStream('India2011.csv')
+											});
+rl.on('line',function(line)
+{
+	counter++;
+	ab(line);
+});
+
+rl.on('close',function(line)
+{
+	const rl1     = readline.createInterface({
+		input: fs.createReadStream('IndiaSC2011.csv')
+});
+rl1.on('line',function(line)
+{
+	ab(line);
+});
+
+rl1.on('close',function(line)
+{	
+	const rl2 = readline.createInterface({
+			input: fs.createReadStream('IndiaST2011.csv')
+});
+rl2.on('line',function(line)
+{
+	ab(line);
+});
+}
+	);
+});
+function ab(line)
+{
+	var flag=false;
+	if(counter==1)
+		str1=line.trim();
+	else
+		str2=line.trim();
+	
+	var lineRecords  = line.trim().split(',');
+	
+	if(str1!=str2 || counter==1)
+	{
+	
+
+	for(var i=0;i<lineRecords.length;i++){
+			if(isHeader)
+			{       
+				header[i]=lineRecords[i];
+				flag=false;
+				agegrp=header.indexOf("Age-group");
+				literatepersons=header.indexOf("Literate - Persons");
+
+			}
+			else
+			{
+				flag=true;
+				
+				tempData[header[agegrp]]=lineRecords[agegrp];
+				tempData[header[literatepersons]]=lineRecords[literatepersons];
+			}        
+		}
+		if(flag)
+		{
+			jsonData.push(tempData);
+			fs.writeFileSync("imneet1.json",JSON.stringify(jsonData),encoding="utf8");
+		}
+		tempData={};
+		isHeader=false;
+
+	}
+}
