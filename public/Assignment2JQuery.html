@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>PART-2</title>
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Bootstrap CSS -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    	<!-- Include Modernizr in the head, before any other Javascript -->
+    	<!--<script src="includes/js/modernizr-2.6.2.min.js"></script>-->
+    	
+    	<link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+    	<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="includes/css/styles.css">
+	</head>
+	<body>
+	<h1 class="header">
+		Employee Records
+	</h1>
+		<div class="container">
+			<form class="search">
+			
+			<input type="text" name="search1" id="search" placeholder="Type Id to search">
+			<a href="#"><span class="glyphicon glyphicon-search" id="gly1"></span></a>
+			<button type="button" class="button1" id="view">View All</button>
+			<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Add</a>
+
+			<!-- <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span></a> -->
+		<!-- 	<a href="#"><button type="button" class="button1" id="add" >Add new player</button></a> -->
+			</form>
+			<!-- Table -->
+			<div class="table-responsive" id="tabledata">
+			<table  id="table" border="2" >
+			<thead>
+				<tr class="row1">
+					<th class="heading1">
+						ID
+					</th>
+					<th class="heading1">
+					AGE
+					</th>
+					<th class="heading1">
+						NAME
+					</th>
+					<th class="heading1">
+						GENDER
+					</th>
+					<th class="heading1">
+						COMPANY
+					</th>
+					<th class="heading1">
+						EMAIL
+					</th>
+					<th class="heading1">
+						PHONE
+					</th>
+					<th class="heading1">
+						EDIT
+					</th>
+					<th class="heading1">
+						DELETE
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+		</div>
+		<!--end of Table-->
+		
+
+		<div class="modal fade" id="myModal">
+							
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+		<button class="close" data-dismiss="modal">&times;</button>
+
+		<h4 class="modal-title">Enter Details</h4>
+		</div><!-- end modal-header-->
+		<div class="modal-body">
+		<!-- <h4>Text in modal</h4>-->
+ 
+		<form class="form-horizontal">
+		<div class="form-group">
+		<label class="col-lg-2 control-label" for="inputName">Name</label>
+		<div class="col-lg-10">
+		<input class="form-control" id="name" type="text" aria-describedby="name-format">
+		<!--<span id="name-format" class="help">Format: firstname lastname</span>-->
+		</div>
+													
+		</div>
+		<div class="form-group">
+		<label class="col-lg-2 control-label" for="inputAge">Age: </label>
+		<div class="col-lg-10">
+		<input class="form-control" id="age" type="number" maxlength="2">
+		</div>
+													
+		</div>
+
+		<div class="form-group">
+		<label class="col-lg-2 control-label"  for="inputGender">Gender</label>
+		<div class="col-lg-10">
+		<input class="form-control inputGender" id="gender" rows="3" type="text">
+		</div>
+													
+		</div>
+
+		<div class="form-group">
+		<label class="col-lg-2 control-label"  for="inputCompany">Company</label>
+		<div class="col-lg-10">
+		<input class="form-control inputCompany" id="company" rows="3">
+		</div>
+													
+		</div>
+
+		<div class="form-group">
+		<label class="col-lg-2 control-label"  for="inputEmail">Email</label>
+		<div class="col-lg-10">
+		<input class="form-control inputEmail" id="email" rows="3" type="email">
+		</div>
+													
+		</div>
+
+		<div class="form-group">
+		<label class="col-lg-2 control-label"  for="inputPhone">Phone</label>
+		<div class="col-lg-10">
+		<input class="form-control inputPhone" id="phone" rows="3" type="tel" pattern="[0-9]" maxlength="10" minlength="10">
+		</div>
+													
+		</div>
+		
+		</form>
+		</div><!--end modal-body-->
+		<div class="modal-footer">
+		<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+		<button class="btn btn-primary addButton" type="button">Submit</button>
+		<button class="btn btn-primary saveButton" type="button">Save</button>
+		</div><!--end modal-footer-->
+		</div><!--end modal-content-->
+		</div><!--end modal-dialog-->
+		</div><!--end myModal-->
+		<!--pagination-->
+		<div id="postswrapper">
+      	<div class="item">
+      		
+      	</div>
+      
+      	<div id="loadmoreajaxloader" style="display:none;">
+      		
+      	</div>
+   		</div>
+
+		
+		
+		 <script src="http://code.jquery.com/jquery.js"></script>
+		<script src="includes/js/Assignment.js"></script>
+		
+		<!-- <script src="includes/js/jquery-1.8.0.min.js"></script>
+		If no online access, fallback to our hardcoded version of jQuery
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script> -->
+		
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Custom JS -->
+		<!-- <script src="includes/js/script.js"></script> -->
+		<!--<script src="mustache.js"></script>-->
+	</body>
+</html>	
